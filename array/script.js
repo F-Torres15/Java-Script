@@ -79,24 +79,25 @@
 // maiorNumero(vetor)
 
 
-// let vetor=[1,2,5,5,9,15,15,15,17]
-// function removerDuplicatas(vetor){
-//     for(let i=0; i<vetor.length;i++)
-//         for(let j =0; j< vetor.length; j++)
-//     if(vetor[j] ==vetor[i]){
-//         vetor.splice(j,1)
-     
-//     }
-// }
+ let vetor=[1,2,5,5,9,15,15,17,18,18]
+ 
+ function removerDuplicatas(vetor){
+     for(let i=0; i<vetor.length;i++){
+         for(let j =i+1; j< vetor.length; j++){
+            
+     if(vetor[j] ==vetor[i]){
 
-// removerDuplicatas(vetor)
-// document.write(vetor)
+       vetor.splice(j,1)
 
-// const vetor = [1,2,5,5,9,15,15,15,17]
-// document.write(vetor)
-// const removerDuplicatas =[... new Set(vetor)]
-// removerDuplicatas
-// document.write( "<br>" +vetor)
+     }
+    }
+   }
+}
+removerDuplicatas(vetor)
+document.write(vetor)
+
+
+
 
 // let vetor =[20,20,10]
 // document.write("<br>" +vetor)
@@ -114,17 +115,17 @@
 //         document.write("<br>" + total)
 
     
-let numero1,numero2
+// let numero1,numero2
 
-numero1= Number (prompt("Digite um número:"))
-numero2=Number (prompt("Digite outro numero:"))
+// numero1= Number (prompt("Digite um número:"))
+// numero2=Number (prompt("Digite outro numero:"))
 
-function multiplicação(numero1,numero2){
-    total = numero1 * numero2
-}
+// function multiplicação(numero1,numero2){
+//     total = numero1 * numero2
+// }
 
-multiplicação(numero1,numero2)
-document.write()
+// multiplicação(numero1,numero2)
+// document.write(total)
 
     
 
