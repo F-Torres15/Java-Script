@@ -114,13 +114,29 @@
 //         somar(vetor)
        
 
-    
-numero = Number(prompt("Insira um número"))
-function multiplicador(numero){
-  let numero2 =Math.random(1,2)
-  document.write(numero*numero2)
 
+    
+// numero = Number(prompt("Insira um número"))
+// function multiplicador(numero){
+//   let numero2 =Math.random(1,2)
+//   document.write(numero*numero2)
+
+// }
+// multiplicador(numero)
+    
+
+let aluno={
+  nome : 'Chico',
+  cidade:'Conquista',
+  olhos :['pretos','verde'],
+  caracteristicas:{
+    peso:80,
+    alutura: 1.72
+  },
+  oi(){
+    return'Estuda no Senai'
+  }
 }
-multiplicador(numero)
-    
 
+let frase = `${aluno.nome}  mora em ${aluno.cidade} ,tem olhos ${aluno.olhos[0] } com peso de ${aluno.caracteristicas.peso}kg e ${aluno.oi()}`
+document.write(frase)
